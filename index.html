@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<style>
+		
+		.top-bar {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			word-spacing: 3px;
+			width: 100%;
+		}
+		.topnav {
+			display: none; 
+		}
+		.menu-icon {
+			display: block;
+			cursor: pointer;
+		}
+		.menu-icon::before {
+			content: "\2630"; 
+			font-size: 20px;
+		}
+		.menu-icon.active ~ .topnav {
+			display: block; 
+		}
+		.topnav a {
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+			padding: 10px;
+			font-size: 20px;
+		}
+
+		body {
+			background-image: url("./world_map.jpg");
+			background-size: 150%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			margin: 10;
+			padding: 10;
+		}
+		.image-container {
+            display: flex;
+            justify-content: center;
+        }
+		.image-container img {
+            margin: 20px
+        }
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var menuIcon = document.querySelector('.menu-icon');
+			
+			menuIcon.addEventListener('click', function() {
+				menuIcon.classList.toggle('active');
+			});
+		});
+	</script>
+</head>
+
+
+<body>
+	<div class="top-bar">
+		<h1><font face="Courier New">Erfahrungsberichte</font></h1>
+		<div class="menu-icon"></div>
+		<div class="topnav">
+		
+            <a class="active" href="./Schweden.html">SCHWEDEN</a>
+            <a class="active" href="./Suedkorea.html">SUEDKOREA</a>
+            <a class="active" href="./UEBER_UNS.html">UEBER UNS</a>
+			<a class="active" href="./Kontakt.html">KONTAKT</a>
+
+		</div>
+	</div>
+	<style>
+		
+		p {
+		  line-height: 1.5; 
+		  color: white;
+		}
+	  </style>
+	<p align="center">Moin und herzlich willkommen!
+
+	</p>
+
+	<p align="center">
+		
+		Wir sind Leon & Sören und wollen euch ueber unsere Erfahrungen aus dem Auslandssemester mit Erasmus informieren.
+		Wir studieren beide an der Friedrich-Schiller-Universität und haben einige nuetzliche Informationen sammeln können,die wir hier gerne mit euch teilen möchten.
+	
+		<p align="center">
+		 Wenn du uns zunächst näher kennenlernen möchtest,
+		einfach <a href="./UEBER_UNS.html">hier</a> klicken.
+		
+		Fuer Informationen zum jeweiligen Gastland, klicke einfach auf die gewuenschte Flagge.
+		</p>
+		
+		<p align="center">
+		Wir wuenschen dir viel Spaß auf unserem Blog und hoffen dir ein wenig Inspiration geben zu können.
+	</p>
+
+	<div class="image-container">
+		<a href="./Suedkorea.html"><img src="./Suedkorea.png" alt="Suedkorea" width="200" height="110" ></a>
+
+		<a href="./Schweden.html"><img src="./Schweden.png" alt="Schweden" width="200" height="110"></a>
+	</div>
+	</div>
+
+</body>
+</html>

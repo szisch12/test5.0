@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UEBER UNS</title>
+	<style>
+		
+		.top-bar {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			word-spacing: 3px;
+			width: 144%;
+		}
+		.topnav {
+			display: none; 
+		}
+		.menu-icon {
+			display: block;
+			cursor: pointer;
+		}
+		.menu-icon::before {
+			content: "\2630"; 
+			font-size: 20px;
+		}
+		.menu-icon.active ~ .topnav {
+			display: block; 
+		}
+		.topnav a {
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+			padding: 10px;
+			font-size: 20px;
+		}
+	
+		body {
+			background-color: #9DB2BF;
+		}
+		
+	</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuIcon = document.querySelector('.menu-icon');
+        
+        menuIcon.addEventListener('click', function() {
+            menuIcon.classList.toggle('active');
+        });
+    });
+</script>
+
+
+</head>
+
+<body>
+  
+
+	<div class="top-bar">
+		<h1><font face="Courier New">UEber uns</font></h1>
+		<div class="menu-icon"></div>
+		<div class="topnav">
+			<a class="active" href="./index.html">HOME</a>
+            <a class="active" href="./Suedkorea.html">SUEDKOREA</a>
+            <a class="active" href="./Schweden.html">SCHWEDEN</a>
+			<a class="active" href="./Kontakt.html">KONTAKT</a>
+	
+        </div>
+		</div>
+
+		<p>Ich bin Leon, 22 Jahre alt und studiere Wirtschaftswissenschaften mit dem Studienschwerpunkt Betriebswirtschaftslehre. 
+			Tendenziell treibe ich viel Sport und liebe die Natur.
+			Insbesondere Leichtathletik, Schwimmen und Volleyball gehören zu meinen Lieblingssportarten. 
+			Generell bin ich ein weltoffener und kommunikationsfreudiger Student, der in einem Auslandsemester, 
+			dass alltägliche Leben in einem neuen Land, eine neue Kultur sowie weitere soziale Kompetenzen erlernen wollte. 
+			Zudem war es eine exzellente Vorbereitung auf den Master, der eine internationale Auslegung haben soll.
+			Man sammelt im Auslandssemester nicht nur wertvolle Lebenserfahrungen, sondern lernt viele neue Menschen kennen, 
+			sodass du danach zumindest europaweit sehr connected bist. Dies sind die Beweggruende gewesen, mein 5. Semester in Schweden anstatt in Jena zu verbringen.
+		</p>
+		<br>
+		<p>
+			Hey, ich bin Sören, 24 Jahre alt und Student der Wirtschaftswissenschaften. Urspruenglich komme ich von der Ostseekueste in Rostock, 
+			aber zurzeit lebe ich das Studentenleben in Jena.
+			Wenn ich nicht gerade meine Nase in wirtschaftlichen Theorien stecke, findest du mich auf dem Spielfeld. Fußball und Volleyball sind meine absoluten Leidenschaften. 
+			Es gibt nichts Besseres, als mit meinen Freunden um den Sieg zu kämpfen und dabei ordentlich ins Schwitzen zu geraten.
+			Aber ich bin nicht nur ein Sportsfreund, sondern auch ein echter Abenteurer. Bereits mit 16 Jahren habe ich mich getraut, ein ganzes Jahr im fernen Oklahoma zu verbringen. 
+			Diese Erfahrung hat meinen Horizont erweitert und mich als Person geprägt.
+			Wenn ich nicht gerade Bälle trete oder Länder erkunde, bin ich oft damit beschäftigt, neue Reisepläne zu schmieden. Das Fernweh lässt mich einfach nicht los. Ich liebe es, 
+			neue Orte zu entdecken, in verschiedene Kulturen einzutauchen und unvergessliche Erinnerungen zu sammeln.
+			Aktuell bin ich voller Tatendrang und mache meine Uni-Jahre in Jena unsicher. Hier genieße ich nicht nur das Studentenleben, sondern setze auch ehrgeizige Ziele fuer meine berufliche Zukunft in der Welt der Wirtschaft.
+			Es gibt so viel zu erleben und zu entdecken, und ich bin dankbar fuer jede Möglichkeit, die mir geboten wird. Also lass uns gemeinsam auf dieses spannende Abenteuer namens Leben losgehen!</p>
+		</p>
+
+
+</body>
+</html>

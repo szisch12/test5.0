@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KONTAKT</title>
+    <style>
+        .top-bar {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            word-spacing: 3px;
+            width: 144%;
+        }
+
+        .topnav {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu-icon::before {
+            content: "\2630";
+            font-size: 20px;
+        }
+
+        .menu-icon.active~.topnav {
+            display: block;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: #5C8984;
+        }
+
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuIcon = document.querySelector('.menu-icon');
+
+            menuIcon.addEventListener('click', function() {
+                menuIcon.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class="top-bar">
+        <h1><font face="Courier New">KONTAKT</font></h1>
+        <div class="menu-icon"></div>
+        <div class="topnav">
+            <a class="active" href="./index.html">HOME</a>
+            <a class="active" href="./Schweden.html">SCHWEDEN</a>
+            <a class="active" href="./Suedkorea.html">SUEDKOREA</a>
+            <a class="active" href="./UEBER_UNS.html">UEBER UNS</a>
+
+        </div>
+    </div>
+
+
+    <p>
+        <form action="formularverarbeitung.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nachricht">Nachricht:</label><br>
+            <textarea id="nachricht" name="nachricht" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Absenden">
+        </form>
+
+    </p>
+
+    <p>Hier ein kleiner Auszug an weiteren Partnerunis der Universität Jena für Wirtschaftswissenschaftler. </p>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+        caption {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+      </style>
+    <table>
+        <caption>Partnerunis</caption>
+        <tr>
+          <th>Name</th>
+          <th>Land</th>
+          <th>Stadt</th>
+        </tr>
+        <tr>
+          <td> Bloomsburg University of Pennsylvania</td>
+          <td>USA</td>
+          <td>Bloomsberg</td>
+        </tr>
+        <tr>
+          <td>Universidad Rey Juan Carlos</td>
+          <td>Spanien</td>
+          <td>Madrid</td>
+        </tr>
+        <tr>
+          <td>University American College Skopje</td>
+          <td>Mazedonien</td>
+          <td>Skopje</td>
+        </tr>
+      </table>
+
+      <dl>
+        <dt>Begriff 1</dt>
+        <dd>Definition 1</dd>
+        <dt>Begriff 2</dt>
+        <dd>Definition 2</dd>
+        <dt>Begriff 3</dt>
+        <dd>Definition 3</dd>
+      </dl>
+      
+
+</body>
+
+</html>
